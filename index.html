@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Chocolate Cake Recipe</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="card">
+        <h1>Chocolate Cake</h1>
+        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600&h=400&fit=crop" alt="Chocolate Cake" />
+        <div class="info">
+            <button onclick="toggleSection('ingredients')">Show Ingredients</button>
+            <ul id="ingredients" class="hidden">
+                <li>2 cups flour</li>
+                <li>1 cup sugar</li>
+                <li>1 cup cocoa powder</li>
+                <li>2 eggs</li>
+            </ul>
+
+            <button onclick="toggleSection('steps')">Show Steps</button>
+            <ol id="steps" class="hidden">
+                <li>Mix ingredients</li>
+                <li>Preheat oven to 350°F</li>
+                <li>Bake for 30 minutes</li>
+            </ol>
+
+            <p>Prep Time: 15 mins | Serves: 4</p>
+            <button onclick="startCooking()">Start Cooking</button>
+            <div id="progress"></div>
+            <div id="timer" style="margin-top:10px;font-weight:bold;"></div>
+            <button id="printBtn" onclick="window.print()" style="margin-top:15px;">Print Recipe</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
